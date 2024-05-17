@@ -3,7 +3,7 @@ price = 34
 weight = 4.5
 money = 500
 cash_back = money - price * weight
-print (float(cash_back))
+print (float(cash_back), 'руб')
 
 
 # Задача Сдача всем
@@ -11,7 +11,7 @@ price = 25.14
 weight = 10.67
 money = 1000
 cash_back = money - price * weight
-print (float(cash_back))
+print (float(cash_back), 'руб')
 
 # Задача Работаем с выводом данных
 name = 'Черешня'
