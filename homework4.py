@@ -9,4 +9,3 @@ print(immutable_var) # !!!Ошибка - мы пытаемся изменить 
 mutable_list = ['banana', True, 5, 7, 'my_cat']
 mutable_list[1] = False
 print(mutable_list)
-
