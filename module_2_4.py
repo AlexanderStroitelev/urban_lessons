@@ -9,12 +9,11 @@ for num in numbers:
             if num % i == 0:
                 is_prime = False
                 break
-    else:
-        is_prime = False
-    if is_prime:
-        primes.append(num)
-    else:
-        not_primes.append(num)
+    
+        if is_prime:
+            primes.append(num)
+        else:
+            not_primes.append(num)
 
 print("Простые числа:", primes)
 print("Не простые числа:", not_primes)
