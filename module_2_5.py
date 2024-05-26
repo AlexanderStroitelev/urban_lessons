@@ -13,4 +13,6 @@ def get_matrix(n, m, value):
 n = int(input("Введите число 'n' строк: "))
 m = int(input("Введите число 'm' столбцов: "))
 value = int(input("Введите число 'value' для заполнения матрицы: "))
-print(get_matrix(n, m, value))
+# и вывод результата на экран в виде матрицы
+for i in get_matrix(n, m, value):
+    print(*i)
