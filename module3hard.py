@@ -18,7 +18,7 @@ def calculate_structure_sum(data):
     return total_sum
 
 
-# Пример данных для тестирования
+# Входные данные (применение функции)
 data_structure = [
     [1, 2, 3],
     {'a': 4,'b': 5},
