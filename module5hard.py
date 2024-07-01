@@ -115,3 +115,4 @@ ur.watch_video('Для чего девушкам парень программи
 
 ur.register('vasya_pupkin', 'F8098FM8fjm9jmi', 55)
 print(ur.current_user)
+ur.watch_video('Лучший язык программирования 2024 года!') 
