@@ -114,4 +114,4 @@ print(cube1.get_volume())
 # # Проверка на изменение сторон треугольника:
 triangle1 = Triangle((200, 200, 100), 10, 6)
 triangle1.set_sides(5, 3, 12, 4, 5)
-print(triangle1.get_sides())
+print(triangle1.get_sides()) # стороны будут - [1, 1, 1]
