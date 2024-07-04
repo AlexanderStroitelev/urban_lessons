@@ -5,8 +5,8 @@ class Figure:
     sides_count = 0
 
     def __init__(self, color=(), sides=(), filled=False):
-        self.__sides = self.__validate_sides(sides)
-        self.__color = self.__validate_color(color)
+        self.__sides = list(self.__validate_sides(sides))
+        self.__color = list(self.__validate_color(color))
         self.filled = filled
 
     def get_color(self):
@@ -16,8 +16,7 @@ class Figure:
         if self.__is_valid_color(r, g, b):
             self.__color = [r, g, b]
 
-    @staticmethod
-    def __is_valid_color(r, g, b):
+    def __is_valid_color(self, r, g, b):
         return all(isinstance(c, int) and 0 <= c <= 255 for c in [r, g, b])
 
     def __validate_color(self, color):
@@ -62,7 +61,7 @@ class Triangle(Figure):
     sides_count = 3
 
     def __init__(self, color=(), side1=0, side2=0, side3=0, filled=False):
-        super().__init__(color=color, sides=[side1, side2, side3], filled=filled)
+        super().__init__(color=color, sides=(side1, side2, side3), filled=filled)
         self.__height = self.__calculate_height()
 
     def __calculate_height(self):
@@ -112,6 +111,6 @@ print(len(circle1))
 print(cube1.get_volume())
 
 # # Проверка на изменение сторон треугольника:
-triangle1 = Triangle((200, 200, 100), 10, 6)
+triangle1 = Triangle([200, 200, 100], 10, 6)
 triangle1.set_sides(5, 3, 12, 4, 5)
-print(triangle1.get_sides()) # стороны будут - [1, 1, 1]
+print(triangle1.get_sides())
