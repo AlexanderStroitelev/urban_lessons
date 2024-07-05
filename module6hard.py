@@ -1,4 +1,4 @@
-9import math
+import math
 
 
 class Figure:
