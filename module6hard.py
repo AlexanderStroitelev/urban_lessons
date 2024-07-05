@@ -111,10 +111,10 @@ print(len(circle1))
 print(cube1.get_volume())
 
 # Проверка на изменение сторон треугольника:
-triangle1 = Triangle((200, 200, 100), 10, 6)
+triangle1 = Triangle((200, 200, 100), 10, 6, 8)
 triangle1.set_sides(5, 3, 12, 4, 5)
 print(triangle1.get_sides()) # Не изменится
-triangle1 = Triangle((200, 200, 100), 10, 6, 8)
+triangle1 = Triangle((200, 200, 100), 10, 6) # неверные стороны - >[1,1,1] 
 print(triangle1.get_sides()) # Изменится
 print(triangle1.get_height()) # высота
 print(triangle1.get_square()) # площадь
