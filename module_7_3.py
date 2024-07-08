@@ -36,3 +36,14 @@ finder2 = WordsFinder('test_file.txt')
 print(finder2.get_all_words()) # Все слова
 print(finder2.find('TEXT')) # 3 слово по счёту
 print(finder2.count('teXT')) # 4 слова teXT в тексте всего
+
+
+-> {'test_file.txt': ["it's", 'a', 'text', 'for', 'task', 'найти', 'везде', 'используйте', 'его', 'для', 'самопроверки', 'успехов', 'в', 'решении', 'задачи', 'text', 'text', 'text']}
+-> {'test_file.txt': 3}
+-> {'test_file.txt': 4}
+
+'test_file.txt'
+-> It's a text for task Найти везде,
+-> Используйте его для самопроверки.
+-> Успехов в решении задачи!
+-> text text text
