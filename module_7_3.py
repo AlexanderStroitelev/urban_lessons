@@ -42,7 +42,7 @@ print(finder2.count('teXT')) # 4 слова teXT в тексте всего
 -> {'test_file.txt': 3}
 -> {'test_file.txt': 4}
 
-'test_file.txt'
+->-> 'test_file.txt':
 -> It's a text for task Найти везде,
 -> Используйте его для самопроверки.
 -> Успехов в решении задачи!
