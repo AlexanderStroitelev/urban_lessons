@@ -32,7 +32,7 @@ class Shop:
     def add(self, *products):
         for product in products:
             if not product.exists():
-                with open(self.__file_name, 'a, encoding='utf-8' ) as file:
+                with open(self.__file_name, 'a', encoding='utf-8' ) as file:
                     file.write(str(product) + '\n')
             else:
                 print(f"Продукт {product.name} уже есть в магазине")
