@@ -24,7 +24,7 @@ class Shop:
 
     def get_products(self):
         try:
-            with open(self.__file_name, 'r') as file:
+            with open(self.__file_name, 'r', encoding='utf-8') as file:
                 return file.read()
         except FileNotFoundError:
             return ''
@@ -32,7 +32,7 @@ class Shop:
     def add(self, *products):
         for product in products:
             if not product.exists():
-                with open(self.__file_name, 'a') as file:
+                with open(self.__file_name, 'a, encoding='utf-8' ) as file:
                     file.write(str(product) + '\n')
             else:
                 print(f"Продукт {product.name} уже есть в магазине")
