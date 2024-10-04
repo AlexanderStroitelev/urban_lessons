@@ -4,7 +4,7 @@ import sqlite3
 conn = sqlite3.connect('not_telegram.db')
 cursor = conn.cursor()
 
-# Удаляем таблицу, если она уже существует# Удаляем таблицу, если она уже существует
+# Удаляем таблицу, если она уже существует
 cursor.execute('DROP TABLE IF EXISTS Users')
 
 cursor.execute('''
