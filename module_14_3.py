@@ -115,8 +115,6 @@ async def send_calories ( message: types.Message , state: FSMContext ) :
     await state.finish ( )
 
 
-# Новые хэндлеры для обработки покупки продуктов
-
 # Обработка кнопки "Купить"
 @dp.message_handler ( Text ( equals = 'Купить' , ignore_case = True ) )
 async def get_buying_list ( message: types.Message ) :
