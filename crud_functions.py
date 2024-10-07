@@ -23,7 +23,7 @@ def initiate_db():
          400, "for_14_3/4.jpg")
     ]
 
-    c.executemany ( 'INSERT INTO Products VALUES (?, ?, ?, ?,?)' , products )
+    c.executemany ( 'INSERT INTO Products VALUES (?, ?, ?, ?, ?)' , products )
     conn.commit()
     conn.close()
 
