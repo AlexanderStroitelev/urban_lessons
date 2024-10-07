@@ -75,5 +75,3 @@ def get_all_products ( ) :
     products = c.fetchall ( )
     conn.close ( )
     return products
-
-initiate_db ( )
