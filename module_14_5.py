@@ -51,7 +51,6 @@ confirm_keyboard.add(confirm_button_yes, confirm_button_no)
 
 @dp.message_handler(Text(equals=['Рассчитать', 'Информация', 'Купить', 'Регистрация'], ignore_case=True), state=RegistrationState.all_states)
 async def confirm_cancellation(message: types.Message, state: FSMContext):
-    # Notify user and ask for confirmation
     await message.answer("Вы находитесь в процессе регистрации. Вы уверены, что хотите прервать его?", reply_markup=confirm_keyboard)
 
 @dp.callback_query_handler(Text(equals='confirm_yes'), state=RegistrationState.all_states)
@@ -67,7 +66,6 @@ async def continue_registration(call: types.CallbackQuery):
 
 @dp.message_handler(commands=['start'], state=RegistrationState.all_states)
 async def start_in_registration(message: types.Message, state: FSMContext):
-    # Ask for confirmation before cancelling registration
     await message.answer("Вы находитесь в процессе регистрации. Вы уверены, что хотите прервать его?", reply_markup=confirm_keyboard)
 
 @dp.message_handler(commands=['start'], state=None)
