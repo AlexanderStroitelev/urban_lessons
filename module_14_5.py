@@ -28,7 +28,7 @@ keyboard = ReplyKeyboardMarkup(resize_keyboard=True)
 button_calculate = KeyboardButton('Рассчитать')
 button_info = KeyboardButton('Информация')
 button_buy = KeyboardButton('Купить')
-button_register = KeyboardButton('Регистрация')  # Registration button added
+button_register = KeyboardButton('Регистрация') 
 keyboard.add(button_calculate, button_info)
 keyboard.add(button_buy, button_register)
 
